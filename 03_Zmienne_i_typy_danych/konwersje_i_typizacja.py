@@ -3,7 +3,7 @@ a = "Ala ma kota"
 
 a = "3"
 
-a = a+3  # Bład !!!!
+a = a + 3  # Bład !!!!
 
 a = int("3")
 

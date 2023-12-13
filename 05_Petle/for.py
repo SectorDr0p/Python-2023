@@ -21,3 +21,20 @@ for i in range(10):
         break
 else:
     print("Koniec")
+
+for number in range(10, 100):
+    suma = 0
+    for c in str(number):
+        suma += int(c)
+    if (suma % 7 == 0 and number % 2 == 0):
+        print(number)
+
+
+
+
+number = input()
+suma = 0
+for c in str(number):
+    print(f"to jest znak-> {c} \nto jest suma-> {suma}")
+    suma += int(c)    # suma = suma + c
+print(suma)

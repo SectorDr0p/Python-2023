@@ -14,7 +14,7 @@ s + 3 # Błąd !
 
 s * 3
 
-"Python" > "Java"
+"Pythona" > "Pythonb"
 s == "Ala"
 
 "10" < "2"
