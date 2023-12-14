@@ -32,5 +32,27 @@ class Saxophone(Instrument):
     def mysound(self):
         return "Fiufiu"
 
+
+"""
+Fabryka - polimorficzne tworzenie obiektow klasy z cmd
+"""
 instrument = globals()[input("Podaj instrument:")]('Bob')
 instrument.play()
+
+if __name__ == '__main__':
+
+    orkiestra = []
+
+    for wpis in sys.argv[1:]:
+
+        muzyk, instrument = tuple(wpis.strip().split('@'))
+
+        orkiestra.append(
+
+            globals()[instrument](muzyk)
+
+        )
+
+    for instrument in orkiestra:
+
+        instrument.play()
