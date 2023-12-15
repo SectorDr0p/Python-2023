@@ -17,6 +17,6 @@ food_list = []
 with open('foods.csv') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
-        food_list.append(FoodItem(item_id=row['Food ID'], item_name=row['Food Item'], price=row['Price']))
+        food_list.append(FoodItem(item_id=row['id'], item_name=row['name'], price=row['price']))
 
 pprint(food_list)

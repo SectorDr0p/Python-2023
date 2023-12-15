@@ -1,3 +1,5 @@
+import sys
+
 class Instrument:
     def mysound(self):
         return "!&$%$^%*"
